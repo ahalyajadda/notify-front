@@ -15,7 +15,7 @@ const CreateNote = () => {
 
         axios({
             method: "POST",
-            url: "https://notify-notify.herokuapp.com/notes",
+            url: "https://note-backend.onrender.com/notes",
             headers: {
                 "Content-Type": "application/json",
                 Authorization: `Bearer ${token}`,

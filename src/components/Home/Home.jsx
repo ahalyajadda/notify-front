@@ -12,7 +12,7 @@ const Home = () => {
         const token = localStorage.getItem("token");
 
         axios
-            .get("https://notify-notify.herokuapp.com/notes", {
+            .get("https://note-backend.onrender.com/notes", {
                 headers: { Authorization: `Bearer ${token}` },
             })
             .then((res) => {

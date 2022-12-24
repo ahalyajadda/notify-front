@@ -13,7 +13,7 @@ const Navbar = () => {
         const token = localStorage.getItem("token");
 
         axios({
-            url: "https://notify-notify.herokuapp.com/users/logout",
+            url: "https://note-backend.onrender.com/users/logout",
             method: "POST",
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -31,7 +31,7 @@ const Navbar = () => {
         const token = localStorage.getItem("token");
 
         axios({
-            url: "https://notify-notify.herokuapp.com/users/delete",
+            url: "https://note-backend.onrender.com/users/delete",
             method: "DELETE",
             headers: {
                 Authorization: `Bearer ${token}`,

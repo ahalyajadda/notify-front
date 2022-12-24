@@ -18,7 +18,7 @@ const Signin = () => {
 
         axios({
             method: "POST",
-            url: "https://notify-notify.herokuapp.com/users/",
+            url: "https://note-backend.onrender.com/users/",
             headers: {
                 "Content-Type": "application/json",
             },

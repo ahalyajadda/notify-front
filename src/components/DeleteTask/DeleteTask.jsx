@@ -14,7 +14,7 @@ const DeleteTask = () => {
     const token = localStorage.getItem("token");
 
     axios({
-        url: `https://notify-notify.herokuapp.com/notes/${id}`,
+        url: `https://note-backend.onrender.com/notes/${id}`,
         method: "GET",
         headers: {
             Authorization: `Bearer ${token}`,
@@ -29,7 +29,7 @@ const DeleteTask = () => {
 
     const handleYesDelete = () => {
         axios({
-            url: `https://notify-notify.herokuapp.com/notes/${id}`,
+            url: `https://note-backend.onrender.com/notes/${id}`,
 
             method: "DELETE",
             headers: {

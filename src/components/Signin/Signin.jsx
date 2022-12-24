@@ -13,7 +13,7 @@ const Signin = () => {
         const user = { username, password };
         axios({
             method: "POST",
-            url: "https://notify-notify.herokuapp.com/users/login",
+            url: "https://note-backend.onrender.com/users/login",
             headers: {
                 "Content-Type": "application/json",
             },
